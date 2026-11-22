@@ -1,0 +1,141 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 1rem;
+  font-family: "Google Sans", sans-serif;
+  background-color: rgb(25, 25, 25);
+
+  color: #fff;
+}
+
+body{
+  scroll-behavior: smooth;
+}
+
+h1{
+  margin: 15px 25px;
+  font-size: 2.2rem;
+}
+
+section{
+  margin: 15px 20px;
+}
+
+.button-layout{
+  margin-block: 40px;
+  display: flex;
+  align-items: center;
+
+  justify-self: flex-start;
+  gap: 20px;
+}
+
+.button-layout button{
+  border: none;
+  padding: 20px;
+  background-color: transparent;
+
+  cursor: pointer;
+  outline: 2px solid #fff;
+  color: #000;
+
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+
+  transition: .2s ease;
+}
+
+.button-layout button:hover{
+  background-color: #000;
+}
+
+.button-layout button img{
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.result-display{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.picked{
+  margin-block: 15px;
+}
+
+.picked img{
+  height: 50px;
+  width: 50px;
+}
+
+.button-action{
+  margin: 40px 20px;
+  display: flex;
+  align-items: flex-start;
+
+  gap: 20px;
+}
+
+.reset-button{
+  border: none;
+  padding: 10px 20px;
+  transition: .2s ease;
+
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.reset-button:hover{
+  background-color: rgb(181, 181, 181);
+}
+
+.show-data{
+  border: none;
+  padding: 10px 20px;
+  transition: .2s ease;
+
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.show-data:hover{
+  background-color: rgb(181, 181, 181);
+}
+
+@media (width < 500px) {
+  h1{
+    font-size: 1.8rem;
+  }
+
+  .picked{
+  margin-block: 10px;
+  }
+
+  .button-layout button{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+
+  .button-layout img{
+    height: 40px;
+    width: 40px;
+  }
+}
